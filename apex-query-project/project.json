@@ -1,0 +1,15 @@
+{
+  "name": "apex",
+  "description": "Node.js Babel (using webpack) example project with infrastructure",
+  "role": "arn:aws:iam::<REPLACE WITH YOUR AWS ACCOUNT NUMBER>:role/<REPLACE WITH YOUR ROLE NAME>",
+  "runtime": "nodejs",
+  "handler": "lib.default",
+  "timeout": 10,
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js"
+  },
+  "vpc": {
+    "securityGroups": ["SECURITY GROUP ID"],
+    "subnets": ["SUBNET ID"]
+  }
+}
