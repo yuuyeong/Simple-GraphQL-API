@@ -1,6 +1,7 @@
 # Simple-GraphQL-API
 
-###express-query-project
+### express-query-project
+
 nodjs와 express를 이용하여 구현한 간단한 GraphQL입니다. project id와 함께 request를 보내면 해당 project의 정보를 얻을 수 있습니다. 얻을 수 있는 정보는 `id`, `title`, `permalink`, `fundingGoal`, `shortDescription`로 총 5가지입니다.
 
 1. 의존성 모듈 설치
@@ -32,7 +33,7 @@ nodjs와 express를 이용하여 구현한 간단한 GraphQL입니다. project i
   ```
 
 
-###apex-query-project
+### apex-query-project
 [Apex](https://github.com/apex/apex)를 이용해 project의 정보를 가져오는 Lambda function을 생성 및 배포합니다. 또한 AWS API Gateway를 이용해 endpoint를 만들고 endpoint를 이용해 Lambda function을 호출할 수 있습니다. 프로그램을 실행하기 위해서는 [Apex](http://apex.run/)와 [Terraform](https://www.terraform.io/downloads.html)이 설치되어 있어야 합니다. 
 
 1. 의존성 모듈 설치
